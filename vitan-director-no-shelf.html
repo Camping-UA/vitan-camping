@@ -3,118 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Стілець Vitan Режисер без полиці d20 мм — Camping-UA</title>
-  <meta name="description" content="Огляд стільця Режисер без полиці d20 мм. Дихаюча тканина текстилен, сталевий каркас. Ціна 1672 грн.">
-
   <style type="text/css">
     :root { 
-      --main-bg: #f4f7f9;
-      --accent-blue: #2c3e50;
-      --action-orange: #ff6700;
-      --text-dark: #34495e;
-      --border-color: #dcdde1;
+      --main-bg: #f4f7f9; --accent-blue: #2c3e50; --action-orange: #ff6700;
+      --text-dark: #34495e; --border-color: #dcdde1;
     }
-    
-    body { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: var(--text-dark); margin: 0; padding: 0; background: var(--main-bg); padding-bottom: 100px; font-size: 18px; }
+    body { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.5; color: var(--text-dark); margin: 0; padding: 0; background: var(--main-bg); padding-bottom: 100px; font-size: 16px; }
     .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-
-    header { background: #fff; border-bottom: 3px solid var(--accent-blue); padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
+    
+    header { background: #fff; border-bottom: 3px solid var(--accent-blue); padding: 10px 0; position: sticky; top: 0; z-index: 1000; }
     .header-content { display: flex; justify-content: space-between; align-items: center; }
-    .brand-name { font-size: 24px; font-weight: 900; color: var(--accent-blue); text-transform: uppercase; letter-spacing: 1px; text-decoration: none; }
-    .brand-name span { color: var(--action-orange); }
-    .nav-back { font-size: 14px; font-weight: 800; color: var(--accent-blue); text-decoration: none; border: 1.5px solid var(--accent-blue); padding: 5px 12px; border-radius: 6px; transition: 0.3s; }
-
-    .product-box { background: #fff; margin: 30px 0; border-radius: 15px; box-shadow: 0 5px 30px rgba(0,0,0,0.05); overflow: hidden; display: grid; grid-template-columns: 1.1fr 1fr; }
+    
+    /* Стилі для логотипу Vitan */
+    .brand-logo img { height: 45px; width: auto; display: block; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.05)); }
+    
+    .nav-back { font-size: 13px; font-weight: 800; color: var(--accent-blue); text-decoration: none; border: 1.5px solid var(--accent-blue); padding: 6px 14px; border-radius: 6px; transition: 0.3s; }
+    .nav-back:hover { background: var(--accent-blue); color: #fff; }
+    
+    .product-box { background: #fff; margin: 30px 0; border-radius: 12px; box-shadow: 0 5px 25px rgba(0,0,0,0.05); overflow: hidden; display: grid; grid-template-columns: 1.1fr 1fr; }
     .gallery-side { padding: 30px; border-right: 1px solid var(--border-color); }
     .main-view { width: 100%; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; }
     #mainImgDisplay { max-width: 100%; max-height: 100%; object-fit: contain; transition: opacity 0.3s; }
-    .thumb-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-    .t-btn { border: 1px solid var(--border-color); border-radius: 8px; cursor: pointer; opacity: 0.7; transition: 0.2s; background: #fff; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .thumb-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    .t-btn { border: 1px solid var(--border-color); border-radius: 6px; cursor: pointer; opacity: 0.7; transition: 0.2s; background: #fff; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; overflow: hidden; }
     .t-btn img { max-width: 85%; max-height: 85%; object-fit: contain; pointer-events: none; }
-    .t-btn.active { opacity: 1; border-color: var(--accent-blue); border-width: 2.5px; }
-
+    .t-btn.active { opacity: 1; border-color: var(--accent-blue); border-width: 2px; }
     .info-side { padding: 40px; display: flex; flex-direction: column; }
-    .info-side h1 { font-size: 32px; color: var(--accent-blue); margin: 0 0 15px; line-height: 1.2; font-weight: 900; }
-    .model-code { font-size: 14px; color: #95a5a6; margin-bottom: 30px; text-transform: uppercase; letter-spacing: 1px; }
-
-    .price-tag { font-size: 48px; font-weight: 900; color: var(--accent-blue); margin-bottom: 10px; }
-    .availability { font-size: 16px; color: #27ae60; font-weight: 800; margin-bottom: 40px; }
-
-    .btn-action-buy { 
-      background: var(--action-orange); color: white; text-decoration: none; text-align: center; 
-      padding: 22px; border-radius: 12px; font-weight: 900; font-size: 20px; text-transform: uppercase;
-      transition: 0.3s; margin-bottom: 30px; display: block;
-    }
-
-    .specs-grid-mini { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-    .mini-spec { background: #f8f9fa; padding: 15px; border-radius: 10px; border-left: 5px solid var(--accent-blue); }
-    .mini-spec label { font-size: 12px; text-transform: uppercase; color: #7f8c8d; display: block; margin-bottom: 5px; font-weight: 700; }
-    .mini-spec span { font-size: 16px; font-weight: 800; color: var(--accent-blue); }
-
-    .tech-details-section { padding: 80px 0; }
-    .section-title { text-align: center; font-size: 32px; color: var(--accent-blue); margin-bottom: 60px; font-weight: 900; text-transform: uppercase; }
-    .tech-banner-item { background: #fff; border-radius: 25px; overflow: hidden; margin-bottom: 50px; display: flex; align-items: center; border: 1px solid var(--border-color); }
+    .info-side h1 { font-size: 28px; color: var(--accent-blue); margin: 0 0 10px; line-height: 1.2; font-weight: 900; }
+    .model-code { font-size: 13px; color: #95a5a6; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px; }
+    .price-tag { font-size: 42px; font-weight: 900; color: var(--accent-blue); margin-bottom: 5px; }
+    .availability { font-size: 15px; color: #27ae60; font-weight: 800; margin-bottom: 35px; }
+    .btn-action-buy { background: var(--action-orange); color: white; text-decoration: none; text-align: center; padding: 18px; border-radius: 10px; font-weight: 900; font-size: 18px; text-transform: uppercase; transition: 0.3s; margin-bottom: 25px; display: block; box-shadow: 0 4px 12px rgba(255,103,0,0.2); }
+    .specs-grid-mini { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .mini-spec { background: #f8f9fa; padding: 12px; border-radius: 8px; border-left: 4px solid var(--accent-blue); }
+    .mini-spec label { font-size: 11px; text-transform: uppercase; color: #7f8c8d; display: block; margin-bottom: 3px; font-weight: 700; }
+    .mini-spec span { font-size: 14px; font-weight: 800; color: var(--accent-blue); }
+    .tech-details-section { padding: 60px 0; }
+    .section-title { text-align: center; font-size: 28px; color: var(--accent-blue); margin-bottom: 50px; font-weight: 900; text-transform: uppercase; }
+    .tech-banner-item { background: #fff; border-radius: 20px; overflow: hidden; margin-bottom: 40px; display: flex; align-items: center; border: 1px solid var(--border-color); box-shadow: 0 10px 30px rgba(0,0,0,0.02); }
     .tech-banner-item:nth-child(even) { flex-direction: row-reverse; }
-    .b-img { flex: 1.2; }
+    .b-img { flex: 1.2; background: #fff; }
     .b-img img { width: 100%; display: block; }
-    .b-text { flex: 1; padding: 50px; }
-    .b-text h3 { color: var(--accent-blue); font-size: 26px; margin-bottom: 20px; font-weight: 900; }
-    .b-text p { font-size: 18px; color: #576574; line-height: 1.7; }
-
-    .specs-full-box { padding: 80px 0; background: var(--accent-blue); color: #fff; border-radius: 40px; margin-bottom: 80px; }
-    .tech-table { max-width: 900px; margin: 0 auto; width: 100%; border-collapse: collapse; }
-    .tech-table td { padding: 22px 15px; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 19px; }
+    .b-text { flex: 1; padding: 40px; }
+    .b-text h3 { color: var(--accent-blue); font-size: 22px; margin-bottom: 15px; font-weight: 900; }
+    .b-text p { font-size: 16px; color: #576574; line-height: 1.6; }
+    .specs-full-box { padding: 60px 0; background: var(--accent-blue); color: #fff; border-radius: 30px; margin-bottom: 60px; }
+    .tech-table { max-width: 850px; margin: 0 auto; width: 100%; border-collapse: collapse; }
+    .tech-table td { padding: 18px 15px; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 16px; }
     .tech-table td:last-child { text-align: right; font-weight: 800; }
-
-    .faq-item { background: #fff; padding: 30px; border-radius: 20px; margin-bottom: 20px; border: 1px solid var(--border-color); }
-    .faq-item strong { font-size: 20px; color: var(--accent-blue); display: block; margin-bottom: 15px; }
-    .faq-item p { margin: 0; color: #576574; font-size: 18px; line-height: 1.6; }
-
-    .sticky-buy-bar { 
-      position: fixed; bottom: 0; left: 0; width: 100%; background: #fff; 
-      padding: 15px 0; box-shadow: 0 -10px 30px rgba(0,0,0,0.1); 
-      z-index: 2000; transform: translateY(100%); transition: 0.4s ease; 
-      border-top: 4px solid var(--accent-blue);
-    }
+    .faq-pro-section { padding-bottom: 80px; }
+    .faq-grid { max-width: 850px; margin: 0 auto; }
+    .faq-item { background: #fff; padding: 25px; border-radius: 15px; margin-bottom: 15px; border: 1px solid var(--border-color); }
+    .faq-item strong { font-size: 17px; color: var(--accent-blue); display: block; margin-bottom: 10px; }
+    .faq-item p { margin: 0; color: #576574; font-size: 15px; line-height: 1.5; }
+    .sticky-buy-bar { position: fixed; bottom: 0; left: 0; width: 100%; background: #fff; padding: 12px 0; box-shadow: 0 -8px 25px rgba(0,0,0,0.1); z-index: 2000; transform: translateY(100%); transition: 0.4s ease; border-top: 3px solid var(--accent-blue); }
     .sticky-buy-bar.active { transform: translateY(0); }
     .sticky-flex { display: flex; justify-content: space-between; align-items: center; }
-    .sticky-price { font-size: 26px; font-weight: 900; color: var(--action-orange); }
-
-    @media (max-width: 992px) {
-      .product-box { grid-template-columns: 1fr; }
-      .gallery-side { border-right: none; border-bottom: 1px solid var(--border-color); }
-      .tech-banner-item { flex-direction: column !important; }
-      .b-text { padding: 30px; }
-    }
-
-    @media (max-width: 768px) {
-      body { font-size: 17px; }
-      .info-side h1 { font-size: 26px; }
-      .price-tag { font-size: 38px; }
-      .tech-table td { font-size: 16px; }
-      .sticky-meta { display: none; }
-      .sticky-flex { justify-content: space-around; gap: 10px; }
-      .btn-sticky { flex: 1; max-width: 200px; }
-    }
-
-    footer { padding: 60px 0; text-align: center; color: #95a5a6; font-size: 16px; background: #fff; border-top: 1px solid var(--border-color); }
+    .sticky-price { font-size: 24px; font-weight: 900; color: var(--action-orange); white-space: nowrap; }
+    .btn-sticky { margin: 0; padding: 12px 25px; font-size: 15px; flex-shrink: 0; }
+    @media (max-width: 992px) { .product-box { grid-template-columns: 1fr; } .gallery-side { border-right: none; border-bottom: 1px solid var(--border-color); padding: 20px; } .tech-banner-item { flex-direction: column !important; border-radius: 15px; } .b-text { padding: 30px; } }
+    @media (max-width: 768px) { body { font-size: 15px; } .sticky-meta { display: none; } .sticky-flex { justify-content: space-around; gap: 10px; } .btn-sticky { flex: 1; max-width: 180px; } }
+    footer { padding: 40px 0; text-align: center; color: #95a5a6; font-size: 14px; background: #fff; border-top: 1px solid var(--border-color); }
   </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const mainImage = document.getElementById('mainImgDisplay');
+      const thumbs = document.querySelectorAll('.t-btn');
+      if(mainImage && thumbs.length > 0) {
+        thumbs.forEach(btn => {
+          btn.addEventListener('click', function() {
+            const src = this.querySelector('img').src;
+            mainImage.style.opacity = '0';
+            setTimeout(() => { mainImage.src = src; mainImage.style.opacity = '1'; }, 200);
+            thumbs.forEach(t => t.classList.remove('active'));
+            this.classList.add('active');
+          });
+        });
+      }
+      const bar = document.getElementById('stickyBar');
+      window.addEventListener('scroll', function() {
+        if (bar) {
+          if (window.scrollY > 600) { bar.classList.add('active'); } 
+          else { bar.classList.remove('active'); }
+        }
+      });
+    });
+  </script>
 </head>
 <body>
-
 <header>
   <div class="container header-content">
-    <a href="index.html" class="brand-name">Camping-UA <span>Expert</span></a>
+    <div class="brand-logo">
+      <img src="https://vitan.in.ua/image/catalog/vitan-logo.svg" alt="Vitan">
+    </div>
     <a href="chairs.html" class="nav-back">← ДО КАТАЛОГУ</a>
   </div>
 </header>
-
 <div class="container">
   <div class="product-box">
+    <!-- Галерея -->
     <div class="gallery-side">
       <div class="main-view">
-        <img src="https://i.postimg.cc/nzwK9GkD/Stilec'-Reziser-bez-polici-d20-mm-(Tekstilen-Bezeva-smuga).jpg" id="mainImgDisplay" alt="Vitan Режисер">
+        <img src="https://i.postimg.cc/nzwK9GkD/Stilec'-Reziser-bez-polici-d20-mm-(Tekstilen-Bezeva-smuga).jpg" id="mainImgDisplay" alt="Vitan Режисер d20">
       </div>
       <div class="thumb-row">
         <div class="t-btn active"><img src="https://i.postimg.cc/nzwK9GkD/Stilec'-Reziser-bez-polici-d20-mm-(Tekstilen-Bezeva-smuga).jpg"></div>
@@ -123,6 +113,7 @@
       </div>
     </div>
 
+    <!-- Інформація -->
     <div class="info-side">
       <h1>Стілець Режисер без полиці d20 мм (Текстилен)</h1>
       <div class="model-code">Артикул: <strong>2110037</strong></div>
@@ -136,7 +127,7 @@
         <div class="mini-spec"><label>Каркас</label><span><strong>Сталь d20 мм</strong></span></div>
         <div class="mini-spec"><label>Вага</label><span><strong>3.8 кг</strong></span></div>
         <div class="mini-spec"><label>Навантаження</label><span><strong>110 кг</strong></span></div>
-        <div class="mini-spec"><label>Тканина</label><span><strong>Текстилен</strong></span></div>
+        <div class="mini-spec"><label>Тканина</label><span><strong>Текстилен (сітка)</strong></span></div>
       </div>
     </div>
   </div>
@@ -145,11 +136,36 @@
 <section class="tech-details-section">
   <div class="container">
     <h2 class="section-title">Експертний огляд конструкції</h2>
+    
     <div class="tech-banner-item">
       <div class="b-img"><img src="https://images.prom.ua/7261392537_w1280_h1280_stilets_rezhiser_bez_poli__stilen_bezheva_smuga3.png?fresh=1"></div>
       <div class="b-text">
         <h3><strong>Анатомічний комфорт</strong></h3>
-        <p>Класична конструкція забезпечує правильну посадку, що розвантажує хребет. Відсутність полиці робить цю модель компактнішою та легшою.</p>
+        <p>Класична форма «Режисер» розроблена для тривалого сидіння без втоми. Відсутність бокової полиці робить модель набагато компактнішою та зручнішою для швидкого переміщення в руках, не втрачаючи при цьому комфорту посадки.</p>
+      </div>
+    </div>
+
+    <div class="tech-banner-item">
+      <div class="b-img"><img src="https://images.prom.ua/7261392538_w1280_h1280_stilets_rezhiser_bez_poli__stilen_bezheva_smuga2.png?fresh=1"></div>
+      <div class="b-text">
+        <h3><strong>Надзвичайна компактність</strong></h3>
+        <p>Завдяки продуманому механізму, стілець складається до плоскої форми одним рухом. Товщина у складеному стані — всього <strong>12 см</strong>, що дозволяє зручно розмістити його в будь-якому багажнику або коморі.</p>
+      </div>
+    </div>
+
+    <div class="tech-banner-item">
+      <div class="b-img"><img src="https://images.prom.ua/7261392558_w1280_h1280_stilets_rezhiser_bez_poli__kstilen_bezheva_smuga.png?fresh=1"></div>
+      <div class="b-text">
+        <h3><strong>Сталева надійність</strong></h3>
+        <p>Каркас виконаний зі сталевої труби діаметром <strong>20 мм</strong> з порошковим полімерним покриттям. Це забезпечує стабільність під великою вагою (до <strong>110 кг</strong>) та надійний захист металу від корозії.</p>
+      </div>
+    </div>
+
+    <div class="tech-banner-item">
+      <div class="b-img"><img src="https://images.prom.ua/7261392546_w1280_h1280_stilets_rezhiser_bez_poli__stilen_bezheva_smuga1.png?fresh=1"></div>
+      <div class="b-text">
+        <h3><strong>Інноваційна сітка Текстилен</strong></h3>
+        <p>Використання тканини <strong>Текстилен</strong> (плетена полімерна нитка) забезпечує ідеальну вентиляцію тіла в спеку. Матеріал не вбирає воду, миттєво сохне та не вигорає під прямими сонячними променями.</p>
       </div>
     </div>
   </div>
@@ -157,14 +173,40 @@
 
 <section class="specs-full-box">
   <div class="container">
-    <h2 class="section-title" style="color:#fff">Технічні характеристики</h2>
+    <h2 class="section-title">Технічні характеристики</h2>
     <table class="tech-table">
-      <tr><td>Матеріал каркасу</td><td><strong>Сталева труба d20 мм</strong></td></tr>
-      <tr><td>Матеріал сидіння</td><td><strong>Текстилен (дихаюча сітка)</strong></td></tr>
+      <tr><td>Матеріал каркасу</td><td><strong>Сталева труба d20 мм (товщина 1 мм)</strong></td></tr>
+      <tr><td>Матеріал сидіння</td><td><strong>Текстилен (плетена сітка)</strong></td></tr>
       <tr><td>Вага виробу (нетто)</td><td><strong>3.8 кг</strong></td></tr>
       <tr><td>Максимальне навантаження</td><td><strong>110 кг</strong></td></tr>
+      <tr><td>Висота до сидіння</td><td><strong>430 мм</strong></td></tr>
+      <tr><td>Габарити у розкладеному вигляді</td><td><strong>800 х 480 х 450 мм</strong></td></tr>
+      <tr><td>Габарити у складеному вигляді</td><td><strong>800 х 480 х 120 мм</strong></td></tr>
       <tr><td>Країна виробник</td><td><strong>Україна (Vitan)</strong></td></tr>
     </table>
+  </div>
+</section>
+
+<section class="faq-pro-section">
+  <div class="container">
+    <div class="faq-grid">
+      <h2 class="section-title" style="text-align: left;">Питання та відповіді</h2>
+      
+      <div class="faq-item">
+        <strong>Чим текстилен кращий за звичайну тканину?</strong>
+        <p>Текстилен — це сітка, яка «дихає». Влітку на ньому сидіти набагато приємніше, бо шкіра не пітніє. Крім того, він не затримує вологу, що важливо при використанні біля води.</p>
+      </div>
+
+      <div class="faq-item">
+        <strong>Наскільки надійне покриття каркасу?</strong>
+        <p>Ми використовуємо полімерне порошкове фарбування, яке запікається при високій температурі. Це створює твердий захисний шар, стійкий до подряпин та ударів.</p>
+      </div>
+
+      <div class="faq-item">
+        <strong>Чи можна залишати стілець під дощем?</strong>
+        <p>Так. Завдяки сітчастій структурі текстилену та захисному шару на сталі, стілець ідеально підходить для використання на відкритому повітрі.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -175,31 +217,12 @@
   </div>
 </div>
 
-<script>
-  const mainImage = document.getElementById('mainImgDisplay');
-  const thumbs = document.querySelectorAll('.t-btn');
-  thumbs.forEach(btn => {
-    btn.addEventListener('click', function() {
-      const src = this.querySelector('img').src;
-      mainImage.style.opacity = '0';
-      setTimeout(() => {
-        mainImage.src = src;
-        mainImage.style.opacity = '1';
-      }, 200);
-      thumbs.forEach(t => t.classList.remove('active'));
-      this.classList.add('active');
-    });
-  });
-
-  window.addEventListener('scroll', function() {
-    const bar = document.getElementById('stickyBar');
-    if (window.scrollY > 600) {
-      bar.classList.add('active');
-    } else {
-      bar.classList.remove('active');
-    }
-  });
-</script>
+<footer>
+  <div class="container">
+    <strong>Camping-UA — Експертне спорядження</strong><br>
+    Якість у кожній деталі © 2026
+  </div>
+</footer>
 
 </body>
 </html>

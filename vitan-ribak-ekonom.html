@@ -11,15 +11,21 @@
     body { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.5; color: var(--text-dark); margin: 0; padding: 0; background: var(--main-bg); padding-bottom: 100px; font-size: 16px; }
     .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
     
-    header { background: #fff; border-bottom: 3px solid var(--accent-blue); padding: 10px 0; position: sticky; top: 0; z-index: 1000; }
+    /* Новий брендинг Camping-UA */
+    header { background: #fff; border-bottom: 4px solid var(--accent-blue); padding: 15px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
     .header-content { display: flex; justify-content: space-between; align-items: center; }
     
-    /* Стилі для логотипу Vitan */
-    .brand-logo img { height: 45px; width: auto; display: block; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.05)); }
-    
-    .nav-back { font-size: 13px; font-weight: 800; color: var(--accent-blue); text-decoration: none; border: 1.5px solid var(--accent-blue); padding: 6px 14px; border-radius: 6px; transition: 0.3s; }
+    .main-logo { text-decoration: none; display: flex; align-items: center; gap: 8px; }
+    .logo-text { font-size: 24px; font-weight: 900; color: var(--accent-blue); text-transform: uppercase; letter-spacing: -0.5px; }
+    .logo-text span { color: var(--action-orange); }
+    .logo-badge { background: var(--accent-blue); color: #fff; font-size: 10px; padding: 2px 6px; border-radius: 4px; font-weight: 800; vertical-align: middle; margin-left: 2px; }
+
+    .nav-back { font-size: 13px; font-weight: 800; color: var(--accent-blue); text-decoration: none; border: 2px solid var(--accent-blue); padding: 6px 14px; border-radius: 6px; transition: 0.3s; }
     .nav-back:hover { background: var(--accent-blue); color: #fff; }
     
+    /* Стилі для лого виробника всередині картки */
+    .vitan-brand-badge { height: 30px; width: auto; display: block; margin-bottom: 15px; opacity: 0.8; }
+
     .product-box { background: #fff; margin: 30px 0; border-radius: 12px; box-shadow: 0 5px 25px rgba(0,0,0,0.05); overflow: hidden; display: grid; grid-template-columns: 1.1fr 1fr; }
     .gallery-side { padding: 30px; border-right: 1px solid var(--border-color); }
     .main-view { width: 100%; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; }
@@ -93,9 +99,9 @@
 <body>
 <header>
   <div class="container header-content">
-    <div class="brand-logo">
-      <img src="https://vitan.in.ua/image/catalog/vitan-logo.svg" alt="Vitan">
-    </div>
+    <a href="index.html" class="main-logo">
+      <div class="logo-text">CAMPING<span>-UA</span><span class="logo-badge">PRO</span></div>
+    </a>
     <a href="chairs.html" class="nav-back">← ДО КАТАЛОГУ</a>
   </div>
 </header>
@@ -116,6 +122,9 @@
 
     <!-- Інформація -->
     <div class="info-side">
+      <!-- Логотип виробника -->
+      <img src="https://vitan.in.ua/image/catalog/vitan-logo.svg" class="vitan-brand-badge" alt="Vitan">
+      
       <h1>Стілець Рибак Економ зі спинкою d16 мм (Камуфляж)</h1>
       <div class="model-code">Артикул: <strong>2120014</strong></div>
       
@@ -152,7 +161,7 @@
       <div class="b-img"><img src="https://images.prom.ua/7261676073_w1280_h1280_stilets_ribak_ekonom_zi_s___oksford_kamuflyazh_1.png?fresh=1"></div>
       <div class="b-text">
         <h3><strong>Практичний комфорт</strong></h3>
-        <p>Наявність спинки дозволяє зняти навантаження з попереку під час тривалого очікування кльову. Тканина <strong>Oxford 600D</strong> з водовідштовхувальним покриттям не боїться вологи та легко чиститься.</p>
+        <p>Наявність спинки дозволяє зняти навантаження з попереку під час тривалого очікування кльову чи відпочинку. Тканина <strong>Oxford 600D</strong> з водовідштовхувальним покриттям не боїться вологи та дуже легко чиститься.</p>
       </div>
     </div>
 
@@ -161,7 +170,7 @@
       <div class="b-img"><img src="https://images.prom.ua/7261676027_w1280_h1280_stilets_ribak_ekonom_zi_s___oksford_kamuflyazh_2.png?fresh=1"></div>
       <div class="b-text">
         <h3><strong>Твій відпочинок</strong></h3>
-        <p>Камуфляжне забарвлення ідеально маскує спорядження серед рослинності. Цей стілець стане незамінним супутником не тільки для риболовлі, а й для пікніків або коротких виїздів на природу.</p>
+        <p>Камуфляжне забарвлення ідеально маскує спорядження серед природного ландшафту. Цей стілець — універсальне рішення для риболовлі, пікніків або швидких виїздів на природу.</p>
       </div>
     </div>
 
@@ -170,7 +179,7 @@
       <div class="b-img"><img src="https://images.prom.ua/7261676025_w1280_h1280_stilets_ribak_ekonom_zi_s___oksford_kamuflyazh_3.png?fresh=1"></div>
       <div class="b-text">
         <h3><strong>Компактна надійність</strong></h3>
-        <p>Ультралегка вага (всього <strong>1.6 кг</strong>) та компактна система складання дозволяють переносити стілець у руках або прикріпити його до рюкзака. При цьому каркас витримує навантаження до <strong>90 кг</strong>.</p>
+        <p>Вага всього <strong>1.6 кг</strong> та проста система складання роблять цей стілець максимально мобільним. Незважаючи на легкість, сталевий каркас впевнено витримує навантаження до <strong>90 кг</strong>.</p>
       </div>
     </div>
   </div>
@@ -198,18 +207,18 @@
       <h2 class="section-title" style="text-align: left;">Питання та відповіді</h2>
       
       <div class="faq-item">
-        <strong>Чи не занадто тонкий метал d16 мм?</strong>
-        <p>Для моделі «Економ» діаметр <strong>16 мм</strong> є золотим стандартом. Завдяки правильній геометрії каркасу, стілець легко витримує дорослу людину середньої статури до <strong>90 кг</strong>.</p>
+        <strong>Наскільки надійна труба діаметром 16 мм?</strong>
+        <p>Для мобільного стільця формату «Економ» діаметр <strong>16 мм</strong> є оптимальним балансом між вагою та міцністю. При правильній експлуатації стілець надійно тримає заявлені <strong>90 кг</strong>.</p>
       </div>
 
       <div class="faq-item">
-        <strong>Чи вигорає камуфляж на сонці?</strong>
-        <p>Тканина <strong>Oxford</strong> стійка до ультрафіолету. Кольори залишаються насиченими навіть після декількох сезонів активного використання на сонці.</p>
+        <strong>Чи стійка фарба на каркасі?</strong>
+        <p>Так, ми використовуємо порошкове полімерне фарбування, яке запікається в печі. Це створює міцний захисний шар, стійкий до подряпин та вологи.</p>
       </div>
 
       <div class="faq-item">
-        <strong>Як стілець поводиться взимку?</strong>
-        <p>Порошкове покриття каркасу захищає метал від конденсату та корозії. Тканина залишається еластичною та не тріскається при низьких температурах.</p>
+        <strong>Як доглядати за тканиною?</strong>
+        <p>Тканина <strong>Oxford</strong> не вбирає бруд глибоко в структуру. Достатньо протерти сидіння вологою щіткою або ганчіркою з мильним розчином.</p>
       </div>
     </div>
   </div>
@@ -217,8 +226,8 @@
 
 <footer>
   <div class="container">
-    <strong>Camping-UA — Експертне спорядження</strong><br>
-    Надійно. Просто. Доступно. © 2026
+    <strong>Camping-UA — Магазин надійного спорядження</strong><br>
+    Доступна якість для кожного © 2026
   </div>
 </footer>
 

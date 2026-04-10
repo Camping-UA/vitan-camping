@@ -3,108 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Camping-UA — Магазин професійного спорядження Vitan</title>
-  
+  <title>Camping-UA — Експертне спорядження для активного відпочинку</title>
   <style type="text/css">
-    :root { 
-      --main-bg: #f4f7f9;
-      --accent-blue: #2c3e50;
-      --action-orange: #ff6700;
-      --text-dark: #34495e;
-      --border-color: #dcdde1;
-    }
-    
-    body { font-family: 'Segoe UI', Roboto, sans-serif; background: var(--main-bg); color: var(--text-dark); margin: 0; padding: 0; }
+    :root { --blue: #2c3e50; --orange: #ff6700; --bg: #f4f7f9; }
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--bg); color: #34495e; }
     .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-
-    /* Header */
-    header { background: #fff; border-bottom: 2px solid var(--accent-blue); padding: 20px 0; text-align: center; }
-    .brand-name { font-size: 28px; font-weight: 900; color: var(--accent-blue); text-transform: uppercase; letter-spacing: 2px; }
-    .brand-name span { color: var(--action-orange); }
-
-    /* Hero Section */
-    .hero { background: var(--accent-blue); color: #fff; padding: 60px 0; text-align: center; margin-bottom: 40px; }
-    .hero h1 { margin: 0 0 10px; font-size: 36px; text-transform: uppercase; }
-    .hero p { font-size: 18px; opacity: 0.8; margin: 0; }
-
-    /* Product Grid */
-    .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; margin-bottom: 60px; }
     
-    .card { background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: 0.3s; border: 1px solid var(--border-color); display: flex; flex-direction: column; }
-    .card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
-    
-    .card-img { width: 100%; aspect-ratio: 1/1; overflow: hidden; background: #fff; display: flex; align-items: center; justify-content: center; padding: 20px; box-sizing: border-box; }
-    .card-img img { max-width: 100%; max-height: 100%; object-fit: contain; }
-    
-    .card-info { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
-    .card-info h2 { font-size: 20px; margin: 0 0 15px; color: var(--accent-blue); line-height: 1.4; height: 56px; overflow: hidden; }
-    
-    .card-price { font-size: 28px; font-weight: 900; color: var(--action-orange); margin-bottom: 20px; }
-    
-    .btn-details { 
-      background: var(--accent-blue); color: #fff; text-decoration: none; text-align: center; 
-      padding: 15px; border-radius: 8px; font-weight: 700; text-transform: uppercase; transition: 0.3s; 
-    }
-    .btn-details:hover { background: var(--action-orange); }
+    header { background: #fff; padding: 20px 0; border-bottom: 2px solid var(--blue); text-align: center; }
+    .logo { font-size: 28px; font-weight: 900; color: var(--blue); text-transform: uppercase; }
+    .logo span { color: var(--orange); }
 
-    footer { background: #fff; border-top: 1px solid var(--border-color); padding: 40px 0; text-align: center; color: #95a5a6; }
+    .hero { background: var(--blue); color: #fff; padding: 80px 0; text-align: center; }
+    .hero h1 { font-size: 42px; margin: 0 0 20px; text-transform: uppercase; }
+    .hero p { max-width: 800px; margin: 0 auto; font-size: 18px; opacity: 0.9; line-height: 1.6; }
 
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 28px; }
-      .product-grid { grid-template-columns: 1fr; }
-    }
+    .categories-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 60px 0; }
+    .cat-card { background: #fff; border-radius: 15px; overflow: hidden; text-decoration: none; color: inherit; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: 0.3s; border: 1px solid #dcdde1; text-align: center; padding: 40px 20px; }
+    .cat-card:hover { transform: translateY(-10px); border-color: var(--orange); }
+    .cat-card h3 { font-size: 22px; color: var(--blue); margin: 0; text-transform: uppercase; }
+    .cat-card p { font-size: 14px; color: #95a5a6; margin-top: 10px; }
+
+    footer { background: #fff; padding: 40px 0; text-align: center; border-top: 1px solid #dcdde1; }
   </style>
 </head>
 <body>
 
 <header>
-  <div class="container">
-    <div class="brand-name">Camping-UA <span>Expert</span></div>
-  </div>
+  <div class="container"><div class="logo">Camping-UA <span>Expert</span></div></div>
 </header>
 
 <section class="hero">
   <div class="container">
-    <h1>Розкладні стільці Vitan</h1>
-    <p>Надійне спорядження для риболовлі, кемпінгу та відпочинку</p>
+    <h1>Твій комфорт на дикій природі</h1>
+    <p>Ми не просто продаємо меблі — ми пропонуємо <strong>професійні інженерні рішення</strong> для тих, хто цінує надійність. Кожен виріб Vitan проходить тестування в реальних умовах, щоб ви могли насолоджуватися відпочинком, не відволікаючись на дрібниці.</p>
   </div>
 </section>
 
 <div class="container">
-  <div class="product-grid">
-    
-    <!-- Товар 1 -->
-    <div class="card">
-      <div class="card-img">
-        <img src="https://i.postimg.cc/0QT2hgQJ/Alum-Stilec'-Reziser-30-15-mm-(Sirij)e.jpg" alt="Vitan Режисер Алюміній">
-      </div>
-      <div class="card-info">
-        <h2>Стілець Режисер Алюміній 30х15 мм (Сірий)</h2>
-        <div class="card-price">3 513 грн</div>
-        <a href="vitan-director.html" class="btn-details">Дивитися огляд</a>
-      </div>
-    </div>
-
-    <!-- Товар 2 -->
-    <div class="card">
-      <div class="card-img">
-        <img src="https://i.postimg.cc/nzwK9GkD/Stilec'-Reziser-bez-polici-d20-mm-(Tekstilen-Bezeva-smuga).jpg" alt="Vitan Режисер d20">
-      </div>
-      <div class="card-info">
-        <h2>Стілець Режисер без полиці d20 мм (Текстилен)</h2>
-        <div class="card-price">1 672 грн</div>
-        <a href="vitan-director-no-shelf.html" class="btn-details">Дивитися огляд</a>
-      </div>
-    </div>
-
+  <div class="categories-grid">
+    <!-- ГРУПА 1 -->
+    <a href="chairs.html" class="cat-card">
+      <h3>Стільці та крісла</h3>
+      <p>Від ультралегких алюмінієвих до посилених сталевих моделей</p>
+    </a>
+    <!-- ГРУПА 2 -->
+    <a href="#" class="cat-card">
+      <h3>Столи та комплекти</h3>
+      <p>Компактні рішення для обіду на свіжому повітрі</p>
+    </a>
+    <!-- ГРУПА 3 -->
+    <a href="#" class="cat-card">
+      <h3>Розкладачки та ліжка</h3>
+      <p>Максимальний комфорт для тривалого кемпінгу</p>
+    </a>
+    <!-- ГРУПА 4 -->
+    <a href="#" class="cat-card">
+      <h3>Чохли та комплектуючі</h3>
+      <p>Захист та обслуговування ваших меблів</p>
+    </a>
   </div>
 </div>
 
 <footer>
-  <div class="container">
-    <strong>Camping-UA — Експертне спорядження</strong><br>
-    Офіційний асортимент продукції Vitan © 2026
-  </div>
+  <strong>Camping-UA — Тільки оригінальна продукція Vitan</strong>
 </footer>
 
 </body>

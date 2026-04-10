@@ -10,11 +10,16 @@
     }
     body { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.5; color: var(--text-dark); margin: 0; padding: 0; background: var(--main-bg); padding-bottom: 100px; font-size: 16px; }
     .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-    header { background: #fff; border-bottom: 3px solid var(--accent-blue); padding: 12px 0; position: sticky; top: 0; z-index: 1000; }
+    
+    header { background: #fff; border-bottom: 3px solid var(--accent-blue); padding: 10px 0; position: sticky; top: 0; z-index: 1000; }
     .header-content { display: flex; justify-content: space-between; align-items: center; }
-    .brand-logo-floating img { height: 40px; width: auto; display: block; }
-    .nav-back { font-size: 13px; font-weight: 800; color: var(--accent-blue); text-decoration: none; border: 1.5px solid var(--accent-blue); padding: 5px 12px; border-radius: 6px; transition: 0.3s; }
+    
+    /* Стилі для логотипу Vitan */
+    .brand-logo img { height: 45px; width: auto; display: block; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.05)); }
+    
+    .nav-back { font-size: 13px; font-weight: 800; color: var(--accent-blue); text-decoration: none; border: 1.5px solid var(--accent-blue); padding: 6px 14px; border-radius: 6px; transition: 0.3s; }
     .nav-back:hover { background: var(--accent-blue); color: #fff; }
+    
     .product-box { background: #fff; margin: 30px 0; border-radius: 12px; box-shadow: 0 5px 25px rgba(0,0,0,0.05); overflow: hidden; display: grid; grid-template-columns: 1.1fr 1fr; }
     .gallery-side { padding: 30px; border-right: 1px solid var(--border-color); }
     .main-view { width: 100%; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; }
@@ -88,7 +93,9 @@
 <body>
 <header>
   <div class="container header-content">
-    <div class="brand-logo-floating"><img src="https://images.prom.ua/4287919640_w250_h100_klondajk.jpg" alt="Клондайк"></div>
+    <div class="brand-logo">
+      <img src="https://vitan.in.ua/image/catalog/vitan-logo.svg" alt="Vitan">
+    </div>
     <a href="chairs.html" class="nav-back">← ДО КАТАЛОГУ</a>
   </div>
 </header>
@@ -167,7 +174,7 @@
       <tr><td>Максимальне навантаження</td><td><strong>110 кг</strong></td></tr>
       <tr><td>Висота до сидіння</td><td><strong>430 мм</strong></td></tr>
       <tr><td>Ширина сидіння</td><td><strong>450 мм</strong></td></tr>
-      <tr><td>Габарити у складеному вигляді</td><td><strong>830 х 530 х 130 мм</strong></td></tr>
+      <tr><td>Габарити у розкладеному вигляді</td><td><strong>830 х 530 х 130 мм</strong></td></tr>
       <tr><td>Країна виробник</td><td><strong>Україна (Vitan)</strong></td></tr>
     </table>
   </div>
@@ -206,7 +213,9 @@
 <footer>
   <div class="container">
     <strong>Camping-UA — Експертне спорядження</strong><br>
-    Працюємо для вашого комфорту © 2026
+    Pixel Perfect Quality © 2026
   </div>
 </footer>
-</body></html>
+
+</body>
+</html>

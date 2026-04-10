@@ -6,65 +6,74 @@
   <title>Стільці та крісла Vitan — Camping-UA</title>
   <style type="text/css">
     :root { --blue: #2c3e50; --orange: #ff6700; --bg: #f4f7f9; }
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--bg); font-size: 18px; }
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--bg); font-size: 16px; color: #34495e; }
     .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
     
-    header { background: #fff; padding: 20px 0; border-bottom: 2px solid var(--blue); display: flex; justify-content: space-between; align-items: center; }
-    .logo { font-size: 24px; font-weight: 900; color: var(--blue); text-transform: uppercase; text-decoration: none; }
-    .logo span { color: var(--orange); }
-    .back-link { text-decoration: none; color: var(--blue); font-weight: 800; font-size: 14px; border: 1px solid var(--blue); padding: 8px 15px; border-radius: 5px; }
+    header { background: #fff; padding: 15px 0; border-bottom: 3px solid var(--blue); position: sticky; top: 0; z-index: 1000; }
+    .header-content { display: flex; justify-content: space-between; align-items: center; }
+    .brand-logo img { height: 40px; width: auto; display: block; }
+    .nav-back { font-size: 13px; font-weight: 800; color: var(--blue); text-decoration: none; border: 1.5px solid var(--blue); padding: 5px 12px; border-radius: 6px; }
 
-    .page-title { margin: 50px 0; text-align: center; font-size: 36px; color: var(--blue); text-transform: uppercase; font-weight: 900; }
+    .page-title { margin: 40px 0; text-align: center; font-size: 32px; color: var(--blue); text-transform: uppercase; font-weight: 900; }
 
-    .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 30px; margin-bottom: 80px; }
-    .card { background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border: 1px solid #dcdde1; display: flex; flex-direction: column; transition: 0.3s; }
-    .card:hover { transform: translateY(-8px); border-color: var(--orange); }
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 25px; margin-bottom: 60px; }
+    .card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 1px solid #dcdde1; display: flex; flex-direction: column; transition: 0.3s; text-decoration: none; color: inherit; }
+    .card:hover { transform: translateY(-5px); border-color: var(--orange); }
     
-    .card-img { padding: 25px; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; background: #fff; }
+    .card-img { padding: 20px; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; background: #fff; }
     .card-img img { max-width: 100%; max-height: 100%; object-fit: contain; }
     
-    .card-info { padding: 25px; flex-grow: 1; text-align: center; border-top: 1px solid #f1f1f1; }
-    .card-info h2 { font-size: 20px; color: var(--blue); margin: 0 0 15px; height: 60px; overflow: hidden; line-height: 1.4; }
-    .card-price { font-size: 28px; font-weight: 900; color: var(--orange); margin-bottom: 25px; }
+    .card-info { padding: 20px; text-align: center; border-top: 1px solid #f1f1f1; }
+    .card-info h2 { font-size: 18px; color: var(--blue); margin: 0 0 10px; height: 50px; overflow: hidden; line-height: 1.4; }
+    .card-price { font-size: 24px; font-weight: 900; color: var(--orange); margin-bottom: 15px; }
     
-    .btn-view { background: var(--blue); color: #fff; text-decoration: none; padding: 16px; border-radius: 10px; display: block; font-weight: 800; text-transform: uppercase; font-size: 16px; transition: 0.3s; }
-    .btn-view:hover { background: var(--orange); }
-
-    @media (max-width: 480px) {
-      .page-title { font-size: 28px; }
-      .card-info h2 { font-size: 18px; }
-      .card-price { font-size: 24px; }
-    }
+    .btn-view { background: var(--blue); color: #fff; padding: 12px; border-radius: 8px; display: block; font-weight: 800; text-transform: uppercase; font-size: 14px; }
   </style>
 </head>
 <body>
 
-<header class="container">
-  <a href="index.html" class="logo">Camping-UA <span>Expert</span></a>
-  <a href="index.html" class="back-link">← НА ГОЛОВНУ</a>
+<header>
+  <div class="container header-content">
+    <div class="brand-logo"><img src="https://vitan.in.ua/image/catalog/vitan-logo.svg" alt="Vitan"></div>
+    <a href="index.html" class="nav-back">← НА ГОЛОВНУ</a>
+  </div>
 </header>
 
 <div class="container">
   <h1 class="page-title">Стільці та крісла</h1>
   
   <div class="product-grid">
-    <div class="card">
+    
+    <!-- ТОВАР 1 -->
+    <a href="vitan-director.html" class="card">
       <div class="card-img"><img src="https://i.postimg.cc/0QT2hgQJ/Alum-Stilec'-Reziser-30-15-mm-(Sirij)e.jpg"></div>
       <div class="card-info">
         <h2>Стілець Режисер Алюміній 30х15 мм (Сірий)</h2>
         <div class="card-price">3 513 грн</div>
-        <a href="vitan-director.html" class="btn-view">Дивитися огляд</a>
+        <div class="btn-view">Дивитися огляд</div>
       </div>
-    </div>
+    </a>
 
-    <div class="card">
+    <!-- ТОВАР 2 -->
+    <a href="vitan-director-no-shelf.html" class="card">
       <div class="card-img"><img src="https://i.postimg.cc/nzwK9GkD/Stilec'-Reziser-bez-polici-d20-mm-(Tekstilen-Bezeva-smuga).jpg"></div>
       <div class="card-info">
         <h2>Стілець Режисер без полиці d20 мм (Текстилен)</h2>
         <div class="card-price">1 672 грн</div>
-        <a href="vitan-director-no-shelf.html" class="btn-view">Дивитися огляд</a>
+        <div class="btn-view">Дивитися огляд</div>
       </div>
-    </div>
+    </a>
+
+    <!-- ТОВАР 3 (НОВИЙ) -->
+    <a href="vitan-ribak-ekonom.html" class="card">
+      <div class="card-img"><img src="https://i.postimg.cc/prKbSYPj/Stilec'-Ribak-Ekonom-zi-spinkou-d16-mm-(Oksford-Kamuflaz).jpg"></div>
+      <div class="card-info">
+        <h2>Стілець Рибак Економ зі спинкою d16 мм</h2>
+        <div class="card-price">484 грн</div>
+        <div class="btn-view">Дивитися огляд</div>
+      </div>
+    </a>
+
   </div>
 </div>
 

@@ -16,116 +16,89 @@
       --border-color: #dcdde1;
     }
     
-    body { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: var(--text-dark); margin: 0; padding: 0; background: var(--main-bg); padding-bottom: 120px; font-size: 19px; }
+    body { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: var(--text-dark); margin: 0; padding: 0; background: var(--main-bg); padding-bottom: 100px; font-size: 18px; }
     .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
-    /* Header & Navigation */
     header { background: #fff; border-bottom: 3px solid var(--accent-blue); padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
     .header-content { display: flex; justify-content: space-between; align-items: center; }
     .brand-name { font-size: 24px; font-weight: 900; color: var(--accent-blue); text-transform: uppercase; letter-spacing: 1px; text-decoration: none; }
     .brand-name span { color: var(--action-orange); }
-    .nav-back { font-size: 15px; font-weight: 800; color: var(--accent-blue); text-decoration: none; border: 2px solid var(--accent-blue); padding: 6px 14px; border-radius: 8px; transition: 0.3s; }
+    .nav-back { font-size: 14px; font-weight: 800; color: var(--accent-blue); text-decoration: none; border: 1.5px solid var(--accent-blue); padding: 5px 12px; border-radius: 6px; transition: 0.3s; }
 
-    /* Product Main Block */
     .product-box { background: #fff; margin: 30px 0; border-radius: 15px; box-shadow: 0 5px 30px rgba(0,0,0,0.05); overflow: hidden; display: grid; grid-template-columns: 1.1fr 1fr; }
-    
     .gallery-side { padding: 30px; border-right: 1px solid var(--border-color); }
     .main-view { width: 100%; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; }
     #mainImgDisplay { max-width: 100%; max-height: 100%; object-fit: contain; transition: opacity 0.3s; }
-    
     .thumb-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
     .t-btn { border: 1px solid var(--border-color); border-radius: 8px; cursor: pointer; opacity: 0.7; transition: 0.2s; background: #fff; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; overflow: hidden; }
     .t-btn img { max-width: 85%; max-height: 85%; object-fit: contain; pointer-events: none; }
-    .t-btn.active { opacity: 1; border-color: var(--accent-blue); border-width: 3px; }
+    .t-btn.active { opacity: 1; border-color: var(--accent-blue); border-width: 2.5px; }
 
-    /* Info Side */
     .info-side { padding: 40px; display: flex; flex-direction: column; }
-    .info-side h1 { font-size: 34px; color: var(--accent-blue); margin: 0 0 15px; line-height: 1.2; font-weight: 900; }
-    .model-code { font-size: 15px; color: #95a5a6; margin-bottom: 30px; text-transform: uppercase; letter-spacing: 1px; }
+    .info-side h1 { font-size: 32px; color: var(--accent-blue); margin: 0 0 15px; line-height: 1.2; font-weight: 900; }
+    .model-code { font-size: 14px; color: #95a5a6; margin-bottom: 30px; text-transform: uppercase; letter-spacing: 1px; }
 
-    .price-tag { font-size: 52px; font-weight: 900; color: var(--accent-blue); margin-bottom: 10px; }
-    .availability { font-size: 18px; color: #27ae60; font-weight: 800; margin-bottom: 40px; }
+    .price-tag { font-size: 48px; font-weight: 900; color: var(--accent-blue); margin-bottom: 10px; }
+    .availability { font-size: 16px; color: #27ae60; font-weight: 800; margin-bottom: 40px; }
 
     .btn-action-buy { 
       background: var(--action-orange); color: white; text-decoration: none; text-align: center; 
-      padding: 24px; border-radius: 14px; font-weight: 900; font-size: 22px; text-transform: uppercase;
-      transition: 0.3s; margin-bottom: 35px; display: block; box-shadow: 0 6px 20px rgba(255,103,0,0.3);
+      padding: 22px; border-radius: 12px; font-weight: 900; font-size: 20px; text-transform: uppercase;
+      transition: 0.3s; margin-bottom: 30px; display: block;
     }
 
     .specs-grid-mini { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-    .mini-spec { background: #f8f9fa; padding: 18px; border-radius: 12px; border-left: 6px solid var(--accent-blue); }
-    .mini-spec label { font-size: 13px; text-transform: uppercase; color: #7f8c8d; display: block; margin-bottom: 5px; font-weight: 700; }
-    .mini-spec span { font-size: 18px; font-weight: 800; color: var(--accent-blue); }
+    .mini-spec { background: #f8f9fa; padding: 15px; border-radius: 10px; border-left: 5px solid var(--accent-blue); }
+    .mini-spec label { font-size: 12px; text-transform: uppercase; color: #7f8c8d; display: block; margin-bottom: 5px; font-weight: 700; }
+    .mini-spec span { font-size: 16px; font-weight: 800; color: var(--accent-blue); }
 
-    /* Tech Banners */
     .tech-details-section { padding: 80px 0; }
-    .section-title { text-align: center; font-size: 36px; color: var(--accent-blue); margin-bottom: 60px; font-weight: 900; text-transform: uppercase; }
-    
+    .section-title { text-align: center; font-size: 32px; color: var(--accent-blue); margin-bottom: 60px; font-weight: 900; text-transform: uppercase; }
     .tech-banner-item { background: #fff; border-radius: 25px; overflow: hidden; margin-bottom: 50px; display: flex; align-items: center; border: 1px solid var(--border-color); }
     .tech-banner-item:nth-child(even) { flex-direction: row-reverse; }
     .b-img { flex: 1.2; }
     .b-img img { width: 100%; display: block; }
     .b-text { flex: 1; padding: 50px; }
-    .b-text h3 { color: var(--accent-blue); font-size: 28px; margin-bottom: 20px; font-weight: 900; }
-    .b-text p { font-size: 20px; color: #576574; line-height: 1.7; }
+    .b-text h3 { color: var(--accent-blue); font-size: 26px; margin-bottom: 20px; font-weight: 900; }
+    .b-text p { font-size: 18px; color: #576574; line-height: 1.7; }
 
-    /* Technical Table */
     .specs-full-box { padding: 80px 0; background: var(--accent-blue); color: #fff; border-radius: 40px; margin-bottom: 80px; }
-    .specs-full-box .section-title { color: #fff; }
-    
     .tech-table { max-width: 900px; margin: 0 auto; width: 100%; border-collapse: collapse; }
-    .tech-table td { padding: 24px 15px; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 21px; }
-    .tech-table td:first-child { color: rgba(255,255,255,0.7); }
+    .tech-table td { padding: 22px 15px; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 19px; }
     .tech-table td:last-child { text-align: right; font-weight: 800; }
 
-    /* FAQ */
-    .faq-pro-section { padding-bottom: 100px; }
-    .faq-grid { max-width: 900px; margin: 0 auto; }
-    .faq-item { background: #fff; padding: 35px; border-radius: 20px; margin-bottom: 25px; border: 1px solid var(--border-color); }
-    .faq-item strong { font-size: 22px; color: var(--accent-blue); display: block; margin-bottom: 15px; line-height: 1.3; }
-    .faq-item p { margin: 0; color: #576574; font-size: 20px; line-height: 1.6; }
+    .faq-item { background: #fff; padding: 30px; border-radius: 20px; margin-bottom: 20px; border: 1px solid var(--border-color); }
+    .faq-item strong { font-size: 20px; color: var(--accent-blue); display: block; margin-bottom: 15px; }
+    .faq-item p { margin: 0; color: #576574; font-size: 18px; line-height: 1.6; }
 
-    /* STICKY BAR */
     .sticky-buy-bar { 
       position: fixed; bottom: 0; left: 0; width: 100%; background: #fff; 
-      padding: 18px 0; box-shadow: 0 -10px 30px rgba(0,0,0,0.1); 
+      padding: 15px 0; box-shadow: 0 -10px 30px rgba(0,0,0,0.1); 
       z-index: 2000; transform: translateY(100%); transition: 0.4s ease; 
-      border-top: 5px solid var(--accent-blue);
+      border-top: 4px solid var(--accent-blue);
     }
     .sticky-buy-bar.active { transform: translateY(0); }
     .sticky-flex { display: flex; justify-content: space-between; align-items: center; }
-    .sticky-price { font-size: 30px; font-weight: 900; color: var(--action-orange); }
-    .btn-sticky { margin: 0; padding: 16px 35px; font-size: 18px; }
+    .sticky-price { font-size: 26px; font-weight: 900; color: var(--action-orange); }
 
-    /* MOBILE ADAPTATION - INCREASED SIZES BY 25% */
-    @media (max-width: 768px) {
-      body { font-size: 22px; } /* Глобальне збільшення тексту */
-      
-      .info-side { padding: 30px 20px; }
-      .info-side h1 { font-size: 30px; }
-      .price-tag { font-size: 46px; }
-      .availability { font-size: 20px; }
-      .btn-action-buy { font-size: 24px; padding: 26px; }
-
-      .mini-spec span { font-size: 20px; }
-      
-      .tech-table td { font-size: 19px; padding: 20px 10px; }
-      .section-title { font-size: 28px; }
-      
-      .b-text h3 { font-size: 26px; }
-      .b-text p { font-size: 20px; }
-
-      .faq-item { padding: 25px; }
-      .faq-item strong { font-size: 22px; }
-      .faq-item p { font-size: 20px; }
-
-      .sticky-meta { display: none; }
-      .sticky-flex { justify-content: space-around; gap: 10px; }
-      .sticky-price { font-size: 28px; }
-      .btn-sticky { flex: 1; max-width: 220px; font-size: 20px; }
+    @media (max-width: 992px) {
+      .product-box { grid-template-columns: 1fr; }
+      .gallery-side { border-right: none; border-bottom: 1px solid var(--border-color); }
+      .tech-banner-item { flex-direction: column !important; }
+      .b-text { padding: 30px; }
     }
 
-    footer { padding: 60px 0; text-align: center; color: #95a5a6; font-size: 18px; background: #fff; border-top: 1px solid var(--border-color); }
+    @media (max-width: 768px) {
+      body { font-size: 17px; }
+      .info-side h1 { font-size: 26px; }
+      .price-tag { font-size: 38px; }
+      .tech-table td { font-size: 16px; }
+      .sticky-meta { display: none; }
+      .sticky-flex { justify-content: space-around; gap: 10px; }
+      .btn-sticky { flex: 1; max-width: 200px; }
+    }
+
+    footer { padding: 60px 0; text-align: center; color: #95a5a6; font-size: 16px; background: #fff; border-top: 1px solid var(--border-color); }
   </style>
 </head>
 <body>
@@ -173,7 +146,6 @@
 <section class="tech-details-section">
   <div class="container">
     <h2 class="section-title">Експертний огляд конструкції</h2>
-    
     <div class="tech-banner-item">
       <div class="b-img"><img src="https://images.prom.ua/7261176196_w1280_h1280_alyum_stilets_rezhiser_30h15_mm_sirij3.png"></div>
       <div class="b-text">
@@ -181,61 +153,20 @@
         <p>Завдяки точно розрахованому куту нахилу спинки та використанню м'якого наповнювача в підлокітниках, цей стілець забезпечує правильну підтримку тіла. Тканина <strong>Oxford 600D</strong> стійка до розтягування та зберігає форму роками.</p>
       </div>
     </div>
-
-    <div class="tech-banner-item">
-      <div class="b-img"><img src="https://images.prom.ua/7261176198_w1280_h1280_alyum_stilets_rezhiser_30h15_mm_sirij2.png"></div>
-      <div class="b-text">
-        <h3><strong>Надзвичайна компактність</strong></h3>
-        <p>Механізм трансформації дозволяє скласти стілець до товщини всього <strong>13 см</strong>. Це робить його ідеальним супутником для подорожей, оскільки він займає мінімум місця в багажнику автомобіля.</p>
-      </div>
-    </div>
-
-    <div class="tech-banner-item">
-      <div class="b-img"><img src="https://images.prom.ua/7261176197_w1280_h1280_alyum_stilets_rezhiser_30h15_mm_sirij1.png"></div>
-      <div class="b-text">
-        <h3><strong>Посилений профіль</strong></h3>
-        <p>Основою конструкції є <strong>плоскоовальна алюмінієва труба 30х15 мм</strong>. Такий профіль значно міцніший за стандартні круглі трубки, що дозволяє витримувати навантаження до <strong>110 кг</strong> при рекордній легкості виробу.</p>
-      </div>
-    </div>
   </div>
 </section>
 
 <section class="specs-full-box">
   <div class="container">
-    <h2 class="section-title">Технічні характеристики</h2>
+    <h2 class="section-title" style="color:#fff">Технічні характеристики</h2>
     <table class="tech-table">
       <tr><td>Матеріал каркасу</td><td><strong>Анодований алюміній (30х15 мм)</strong></td></tr>
       <tr><td>Матеріал сидіння</td><td><strong>Оксфорд 600D Меланж</strong></td></tr>
       <tr><td>Вага виробу (нетто)</td><td><strong>2.6 кг</strong></td></tr>
       <tr><td>Максимальне навантаження</td><td><strong>110 кг</strong></td></tr>
       <tr><td>Висота до сидіння</td><td><strong>430 мм</strong></td></tr>
-      <tr><td>Ширина сидіння</td><td><strong>450 мм</strong></td></tr>
-      <tr><td>Габарити у складеному вигляді</td><td><strong>830 х 530 х 130 мм</strong></td></tr>
       <tr><td>Країна виробник</td><td><strong>Україна (Vitan)</strong></td></tr>
     </table>
-  </div>
-</section>
-
-<section class="faq-pro-section">
-  <div class="container">
-    <div class="faq-grid">
-      <h2 class="section-title" style="text-align: left;">Питання та відповіді</h2>
-      
-      <div class="faq-item">
-        <strong>Чи стійкий каркас до іржі?</strong>
-        <p>Так, алюмінієвий каркас має анодоване покриття, тому він абсолютно не боїться вологи та корозії, що ідеально для риболовлі та використання біля води.</p>
-      </div>
-
-      <div class="faq-item">
-        <strong>Чи підійде цей стілець для піщаного ґрунту?</strong>
-        <p>Так. Завдяки горизонтальним перекладинам на ніжках, стілець не просідає у м'який грунт або пісок, рівномірно розподіляючи вагу по поверхні.</p>
-      </div>
-
-      <div class="faq-item">
-        <strong>Як доглядати за тканиною?</strong>
-        <p>Тканина <strong>Oxford 600D</strong> має спеціальне водовідштовхувальне покриття. Будь-які забруднення легко видаляються звичайною вологою губкою або серветкою.</p>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -245,13 +176,6 @@
     <a href="https://t.me/evgen_chuikin" class="btn-action-buy btn-sticky">Купити зараз</a>
   </div>
 </div>
-
-<footer>
-  <div class="container">
-    <strong>Camping-UA — Експертне спорядження</strong><br>
-    Pixel Perfect Quality © 2026
-  </div>
-</footer>
 
 <script>
   const mainImage = document.getElementById('mainImgDisplay');
